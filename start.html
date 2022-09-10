@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            color:cornflowerblue;
+        }
+        .header{
+            position: sticky;
+            top:0;
+            display: flex;
+           height: 80px;
+           background-color: rgb(238, 227, 227);
+        }
+        .header .icon{
+            flex: 50%;
+            padding-top: 20px;
+            padding-left: 30px;
+        }
+        .header .link{
+            flex:25%;
+            padding-top: 40px;
+            padding-right: 10px;
+        }
+        .header a{
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color:cornflowerblue;
+            padding: 12px;
+            border-radius: 18px;
+        }
+        .header .active{
+            background-color: cornflowerblue;
+            padding:12px;
+            color: white;
+
+        }
+        .first .left{
+            height: 500px;
+            background-image: url('Landing+page+1+copy.jpg');
+            color: cornflowerblue;
+                padding: 70px;
+                padding-top:140px;
+                font-size: 24px;
+                padding-left: 150px;
+        }
+        /* first section style */
+          .first .left  h1,p{
+
+                text-transform: uppercase;
+                
+            }
+            .first .left p{
+
+                    font-size: 18px;
+                }
+                .second{
+                    height: 1000px;
+                }
+                .second .a{
+                    width: 400px;
+                    padding: 30px;
+                    margin-left:150px;
+                    border-radius: 12px;
+                    background-color: white;
+                    box-shadow: 2px 1px 12px cornflowerblue;
+                    float: left;
+                    margin-top: 100px;
+                }
+                .second .a button:hover{
+                    text-shadow: 1px 1px 13px gray;
+                }
+
+                .second .b{
+                    margin-top: 100px;
+
+                width: 400px;
+                padding: 30px;
+                    margin-right: 150px;
+                border-radius: 12px;
+                background-color: white;
+                box-shadow: 2px 1px 12px cornflowerblue;
+                float: right;
+                
+                
+            }.second .b button:hover{
+                    text-shadow: 1px 1px 13px gray;
+                }
+        /* this is tree part style */
+            .tree{
+                background-color:#efe9e3 ;
+                height: 300px;
+                text-align: center;
+                font-size:20px;
+                font-family:'Courier New' ;
+            }
+            .tree .a{
+                margin-top: 50px;
+                display: inline-block;
+                width: 300px;
+            }
+            
+            .tree .b{
+                display: inline-block;
+                width: 300px;
+            }
+            .tree .c{
+                display: inline-block;
+                width: 300px;
+
+            }
+            /* comment section */
+            .comment{
+                display:flex;
+                height: 400px;
+                padding: 20px;
+                background-color:#efe9e3;
+
+            }
+
+            .comment .ac{
+                flex: 25%;
+                height:300px;
+                border-radius: 14px;
+                margin-left: 27px;
+                width: 25%;
+                padding: 10px;
+                padding-right: 45px;
+                background-color: white;
+                box-shadow: 2px 1px 12px cornflowerblue;
+            }
+            .comment .ac .img img{
+             margin: 10px;
+            }
+            .comment .ac .img h1{
+                margin-left: 180px;
+                padding-top: 30px;
+                width:150px; 
+            padding-right: 58px;
+            }
+            .comment .ac p{
+             margin: 5px;
+             margin-top:58px ;
+             font-size: 15px;
+             width: 100%;
+            }
+            .comment .bc{
+                flex: 25%;
+                height:300px;
+                border-radius: 14px;
+                margin-left: 40px;
+                width: 25%;
+                padding: 10px;
+                padding-right: 45px;
+                background-color: white;
+                box-shadow: 2px 1px 12px cornflowerblue;
+            }
+            .comment .bc .img img{
+             margin: 10px;
+            }
+            .comment .bc .img h1{
+                margin-left: 180px;
+            padding-right: 207px;
+                padding-top: 30px; 
+            }
+            .comment .bc p{
+             margin: 5px;
+             margin-top:40px ;
+             font-size: 15px;
+             width: 100%;
+            }
+            .comment .cc{
+                flex: 25%;
+                height:300px;
+                border-radius: 14px;
+                margin-left: 40px;
+                width: 25%;
+                padding: 10px;
+                padding-right: 45px;
+                background-color: white;
+                box-shadow: 2px 1px 12px cornflowerblue;
+            }
+            .comment .cc .img img{
+             margin: 10px;
+            }
+            .comment .cc .img h1{
+                height:110px;
+                margin-left: 180px;
+                padding-top: 30px; 
+                padding-right: 208px;
+            }
+            .comment .cc p{
+             margin: 5px;
+             margin-top:50px ;
+             font-size: 15px;
+             width: 100%;
+            }
+            
+            .links{
+            background-color: white;
+            height:550px;
+            padding:50px;
+        }
+        .links .left{
+            margin:20px;
+            height: 450px;
+            margin-left: 70px;
+            margin-top: 100px;
+            background-image: url('Classic_camaro.ico');
+            width: 35%;
+            background-repeat: no-repeat;
+            float: left;
+            
+        }
+
+        .links .link img{
+            height: 40px;
+            margin: 20px;
+            padding-right: 20px;
+            padding-top: 90px;
+        }
+/* this is four section */
+.forth{
+            height: 690px;
+            background-color: #efe9e3 ;
+        }
+        .forth .left{
+            margin:20px;
+            margin-left: 120px;
+            padding:22px;
+            padding-top: 100px;
+            font-size: 24px;
+            width: 500px;
+            float:left;
+            
+        }
+        .forth .right{
+            margin: 80px;
+            padding-top: 100px;
+
+        }
+        /* footer the last section of page */
+          /* This is footer style */
+          .pa{
+            font-size: 20px;
+            margin-top: 0px;
+            background-color:rgb(15, 231, 231) ;
+            height: 519px;
+            width: auto;
+            padding-top: 40px;
+            padding-left:15px;
+            color:white;
+            line-height: 40px;
+
+        }
+        .pa .le{
+            width: 45%;
+            float: left;
+            padding-left: 40px;
+            
+        }
+        .pa .le strong{
+            text-transform:uppercase;
+        }
+        .pa .le a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color:rgb(211, 198, 198);
+        
+        }
+        
+        .pa .le a:hover{
+            color:plum;
+        }
+        .pa .ri{
+            height: 61%;
+            width:45%;
+            margin-left: 645px;
+        }
+        .pa .ri span{
+            text-transform: uppercase;
+                }
+        .pa .ri input{
+            height: 30px;
+            width: 250px;
+            padding:10px;
+            transition: 1s;
+
+        }
+        input:hover{
+            background-color:rgb(15, 231, 231) ;
+            
+            color: white;
+            border-color:none;
+
+        }
+       
+        .pa .ri button{
+            text-transform: uppercase;
+            color:white;
+            background-color:rgb(15, 231, 231) ;            
+            height: 53px;
+            width: 150px;
+            padding:10px;
+            border: 2px solid white;
+        }
+        button:hover{
+            background-color: green;
+            text-shadow: 2px 3px 4px black;
+            box-shadow: 2px 2px 2px  2px black;
+        }
+       
+        
+        .pa .ri{
+            color: white;
+        }
+        .pa .ri img{
+            height: 40px;
+            width:40px;
+            padding: 10px;
+            margin-right: 15px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        
+        .pa .bo span{
+            margin-top: 0px;
+            margin-right: 20px;
+            text-align: center;
+        position:absolute;
+        font-size: 15px;
+        font-family: cursive;
+        word-spacing: 9px;
+        color: white;
+        left:37%;
+            
+
+        }
+        .masa{
+           margin-top: 0%;
+          float: left;
+            width: 70px;
+            margin-left: 75%;
+          
+        }
+        .masa:hover{
+         filter:brightness(140%) ;
+          
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="icon">
+    <img src="StartupistanLogo.png" height="45px"alt=""></div>
+    <div class="link">
+  <a href="">about</a>
+  <a href="">Events</a>
+  <a href="">programs</a>
+  <a href="" class="active">apply now</a></div>
+</div>    
+<div class="first">
+<div class="left">
+            <h1>training afghanistan's <br> <span style="background-color: cornflowerblue;color:white;">entrepreneurs</span></h1>
+            <p>Lorem ip adipisicing eeatae! Voluptate, <br><br> est. 
+                Quam incidunt quo odio 
+                liquam?</p>
+</div>
+</div>
+<div>
+<div class="second" style="background-color: #efe9e3;">
+    <center>
+        <h1 style="padding: 23px;margin-top:-10px;padding-top:80px">DISCOVER OUR <span style="background-color: cornflowerblue;color:white;">COURSES</span></h1>
+    </center><br>
+<div class="a">
+    <img src="Capture.PNG"style="margin-top:-86px;" alt="">
+    <div class="text">
+        <center>
+       <h1>Digital Orientation Course</h1>\
+       <p style="text-transform: capitalize;">Lorem ipsum dolor sit amet consectetur m quae repudiandae labore, quibusdam 
+        quidem debitis aperiam autem est vitae. Undadipisid 
+        b <br><br> nim quae repudiandae labore, quibusdam 
+        quidem debitis aperiam autem est vitae. Undm qu Veritatis.</p> 
+        <button style="border:1px solid cornflowerblue; padding:9px;font-size:19px;border-radius:7px;box-shadow: 2px 1px 2px 1px cornflowerblue;background-color: white;">LEARN MORE</button></center>
+    </div></div>
+    <div class="b">
+        <img src="Capture1.PNG"style="margin-top:-73px;margin-left:-20px; "alt="">
+        <div class="text">
+            <center>
+           <h1>Digital Orientation Course</h1>\
+           <p style="text-transform: capitalize;">Lorem ipsum dolor sit amet consectetur m quae repudiandae labore, quibusdam 
+            quidem debitis aperiam autem est vitae. Undadipisid 
+            b <br><br> nim quae repudiandae labore, quibusdam 
+            quidem debitis aperiam autem est vitae. Undm qu Veritatis.</p> 
+            <button style="border:1px solid cornflowerblue; padding:9px;
+            font-size:19px;border-radius:7px;box-shadow: 2px 1px 2px 1px cornflowerblue;background-color: white;">LEARN MORE</button></center>
+        </div>
+    </div>
+</div>
+<div class="tree" >
+    <div class="a">
+    <h2 style="color: black;">Empowering <br>tools</h2>
+    <span style="color: black;font-size: 15px">for personal and business life.</span>
+    </div>
+    <div class="b" >
+    <h2 style="color: black;">Greater job <br>opportunities</h2>
+    <span style="color: black;">with in demand skills.</span>
+    </div>
+    <div class="c" >
+    <h2 style="color: black;">Designing <br>tools</h2>
+    <span style="color: black;;">for web Development</span>
+    </div>
+</div>
+<div class="tilt" style="background-color: #efe9e3;margin-top:-32px;height:100px;">
+<center>
+    <h1 style="text-transform:uppercase; font-size: 48px;">student <span style="background-color:cornflowerblue;
+     color:white" >testimonials</span></h1>
+</center></div>
+<div class="comment">
+                <div class="ac" >
+                    <div class="img">
+                    <img src="ca.png" style="float:left; " alt="" >
+                
+                        <h1>Abdul Jalal <span style="background-color:cornflowerblue;color:white;">Student</span></h1></div>
+                        <div ><p>"Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem with the web Exercitationem, assumenda?</p>
+                </div>
+            </div>
+            <div class="bc" >
+                <div class="img">
+                <img src="cb.png" style="float:left; " height="150px" alt="" >
+            
+                    <h1>Fatema Qazizada <span style="background-color:cornflowerblue;color:white;">
+                        Entrepreneur</span></h1></div>
+                    <div ><p>"Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem with the web Exercitationem, assumenda?</p>
+            </div>
+        </div>
+        <div class="cc" >
+            <div class="img">
+            <img src="cc.png" style="float:left; " height="150px" alt="" >
+        
+                <h1>Husn1a Ayoubi <span style="background-color:cornflowerblue;color:white;">
+                    Entrepreneur</span></h1></div>
+                <div ><p>"Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem with the web Exercitationem, assumenda?</p>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+<!-- link section -->
+<div class="links">
+    <center><h1 style="text-transform: uppercase;">our <span style="padding:4px;background-color:cornflowerblue ;color:white;">partners</span></h1></center>
+    <div class="left">
+    <img src="Screenshot 2022-08-11 at 08-11-00 Startupistan - Digital Skills Academy.png" alt="">
+    </div>
+    <div class="link">
+            <img src="icon/1200px-Adobe_Photoshop_Mobile_icon.svg_293329.ico" alt="">
+            <img src="icon/1486565573-microsoft-office_81557_293329.ico" alt="">
+            <img src="icon/1822px-ISO_C++_Logo.svg_323332.ico" alt="">
+            <img src="icon/2.ico" alt="">
+            <img src="icon/267_Python-512_303330.ico" alt="">
+            <img src="icon/919826_283328.ico" alt="">
+            <img src="icon/919827-1_283328.ico" alt="">
+            <img src="icon/9447fd1208e259e642eff25bfa11eaab_303330.ico" alt="">
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, et!</p>
+            <p>Lorem adipisicing elit. Iste, et!</p>
+    </div></div>
+
+<!-- four section -->
+<div class="forth">
+    <div class="left">
+        <h1>Youth Potential <br>Unleashed By <br><span style="background-color: cornflowerblue;color:white;">Enterpreneurship!</span></h1>
+    <br><br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+     Vero porro soluta inventore dolor ducimus accusamus quod dicta obcaecati.
+     Ipsam enim omnis neque voluptatem quasi iure consectetur inventore quam dolore! Iure!
+    </div>
+    <div class="right">
+        <img src="Screenshot 2022-08-11 at 08-09-59 Startupistan - Digital Skills Academy.png" alt="">
+
+    </div>
+
+
+</div>
+<!-- the footer  -->
+<div class="pa">
+    <div class="le">
+        <strong style="color: white;">Startupistan</strong><br><br>
+        <a href="#">about us</a><br>
+        <a href="#">community</a><br>
+        <a href="#">programs</a><br>
+        <a href="#">stories</a><br><br>
+        <p style="color: white;">Teaching the DNA of the future  &#128518;
+             <span style="font-size:170%;color:orangered;"> &hearts; </span></p>
+
+    </div>
+    <div class="ri">
+        <span style="color: white;">join our community</span>
+        <p style="color:rgb(211, 198, 198);">Be the first to get invited to our courses & even learn about what we are up to <br> and the oppotunities to get involved</p>
+         <input type="email" placeholder="Email Address">
+         <button>subscribe</button><br><br>
+        
+            <a href="#"><img src=".//f.png" alt=""></a>&nbsp; &nbsp;
+            <a href="#"><img src=".//email.png" alt=""></a>&nbsp; &nbsp;
+            <a href="#"><img src=".//in.png" alt=""></a>&nbsp; &nbsp;
+            <a href="#"><img src=".//twiter.png" alt=""></a>&nbsp;
+    </div><br>
+   
+    <div class="bo">
+<span> Say hi - wo'd love to chat
+  <br>  Hello@startupistan.org <br>
+  IMPRINT-DISCLAIMER-PRIVACY POLICY 
+  <br>&copy; sardarwadannadeem
+</span><br>
+       
+        
+       
+   
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+<svg version="1.1" id="b8c64dc2-e86a-49bc-92bf-164106d9e7fb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 887.9 569.7" style="enable-background:new 0 0 887.9 569.7;" xml:space="preserve">
+    <style type="text/css">
+        .st0{fill:#FFB9B9;}
+        .st1{fill:#4A86E8;}
+        .st2{fill:#2F2E41;}
+        .st3{fill:#E6E6E6;}
+        .st4{fill:#FFFFFF;}
+        .st5{fill:#CCCCCC;}
+        .st6{fill:#3F3D56;}
+        .st7{fill:#0E3772;}
+    </style>
+    <path class="st0" d="M185,268.8c0,0,3.3,19.5-8.1,27.3c-11.3,7.8-8-25.1-8-25.1L185,268.8z"></path>
+    <path class="st1" d="M127.5,160c2.4,4.4,9.7,28.3,13,42c3.4,13.7,12,13.1,13.9,19.5c1.8,6.4,4.2,18.2,5.9,23
+        c1.8,4.8,3.5,27.6,4,31.4s19.6-1.6,23.4-3.7c3.8-2.1-0.9-6.1-6.5-19.4s-2.1-12.8-2.1-12.8s-8.6-25.2-13.4-53.7
+        c-5.1-30.3-36.1-74.9-36.1-74.9l-6.1-0.8C123.5,110.6,125.1,155.6,127.5,160z"></path>
+    <path class="st2" d="M99.8,179c0,0-53.7-74.7-19.1-107.2s51.1-6.8,60.6,10c9.5,16.8,14.7,64.6-4.1,83.4S99.8,179,99.8,179z"></path>
+    <rect x="276.4" y="0.3" class="st3" width="611.5" height="391.6"></rect>
+    <rect x="293.9" y="49.5" class="st4" width="576.5" height="319.3"></rect>
+    <rect x="276.2" class="st1" width="611.5" height="26"></rect>
+    <circle class="st4" cx="295.5" cy="13.3" r="4.8"></circle>
+    <circle class="st4" cx="313.7" cy="13.3" r="4.8"></circle>
+    <circle class="st4" cx="332" cy="13.3" r="4.8"></circle>
+    <path class="st5" d="M707.3,79.4H519.6c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h187.7c0.9,0.1,1.6,1,1.4,1.9
+        C708.6,78.7,708,79.3,707.3,79.4z"></path>
+    <path class="st5" d="M577.2,97.5H457.9c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+        C578.6,96.9,578,97.4,577.2,97.5z"></path>
+    <path class="st5" d="M707.3,97.9H587.9c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+        C708.6,97.2,708,97.8,707.3,97.9z"></path>
+    <path class="st5" d="M577.5,115.7H458.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+        C578.8,115,578.3,115.6,577.5,115.7z"></path>
+    <path class="st5" d="M577.8,133.9H458.5c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+        C579.1,133.2,578.5,133.8,577.8,133.9z"></path>
+    <path class="st5" d="M632,115.7h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4H632c0.9,0.1,1.6,1,1.4,1.9
+        C633.3,115,632.7,115.6,632,115.7L632,115.7z"></path>
+    <path class="st5" d="M632,133.5h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4H632c0.9,0.1,1.6,1,1.4,1.9
+        C633.3,132.9,632.7,133.4,632,133.5L632,133.5z"></path>
+    <path class="st5" d="M689.3,133.5h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+        C690.6,132.9,690.1,133.4,689.3,133.5z"></path>
+    <path class="st5" d="M491.2,79.4H457c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+        C492.5,78.7,491.9,79.3,491.2,79.4z"></path>
+    <path class="st5" d="M576.8,287.7H457.5c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+        C578.1,287,577.5,287.6,576.8,287.7L576.8,287.7z"></path>
+    <path class="st5" d="M576.2,324H456.9c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+        C577.5,323.3,577,323.9,576.2,324z"></path>
+    <path class="st5" d="M576.5,342.2H457.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+        C577.8,341.5,577.2,342.1,576.5,342.2L576.5,342.2z"></path>
+    <path class="st5" d="M627.5,324.3h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+        C628.8,323.7,628.2,324.2,627.5,324.3L627.5,324.3z"></path>
+    <path class="st5" d="M627.5,342.2h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+        C628.8,341.5,628.2,342.1,627.5,342.2L627.5,342.2z"></path>
+    <path class="st5" d="M684.8,324.3h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+        C686.2,323.7,685.6,324.2,684.8,324.3z"></path>
+    <path class="st5" d="M707.4,305.8H519.7c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h187.7c0.9,0.1,1.6,1,1.4,1.9
+        C708.7,305.2,708.2,305.7,707.4,305.8z"></path>
+    <path class="st5" d="M491.3,305.8h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+        C492.7,305.2,492.1,305.7,491.3,305.8z"></path>
+    <polygon class="st3" points="548,163.2 501.6,209 548,254.7 558.4,244.3 523.3,209.3 558.7,173.9 "></polygon>
+    <polygon class="st3" points="616.3,163.2 662.7,209 616.3,254.7 605.9,244.3 640.9,209.3 605.6,173.9 "></polygon>
+    <polygon class="st1" points="548,163.2 501.6,209 548,254.7 558.4,244.3 523.3,209.3 558.7,173.9 "></polygon>
+    <polygon class="st1" points="616.3,163.2 662.7,209 616.3,254.7 605.9,244.3 640.9,209.3 605.6,173.9 "></polygon>
+    <path class="st3" d="M470.6,546c14.4,19.3,44.4,21.3,44.4,21.3s6.6-29.3-7.9-48.6s-44.4-21.3-44.4-21.3S456.2,526.7,470.6,546z"></path>
+    <path class="st3" d="M544.1,553.3c-9.5,12.7-29.3,14.1-29.3,14.1s-4.3-19.3,5.2-32.1s29.3-14.1,29.3-14.1S553.6,540.6,544.1,553.3z"></path>
+    <polygon class="st0" points="193.7,459.8 193.7,509.9 179.4,509.9 169.9,457.4 "></polygon>
+    <polygon class="st0" points="80.4,459.8 80.4,509.9 66,509.9 56.5,457.4 "></polygon>
+    <path class="st0" d="M123.5,111.2c0,0-2.9,21.6,10.8,23s-44.6,5.8-44.6,5.8s15.1-13.7,7.2-24.5S123.5,111.2,123.5,111.2z"></path>
+    <path class="st2" d="M196.2,496.6l5,42.4c0,0,25.2,30.9,9.3,28.8s-25.9,0.5-25.9-2.4s-0.4-13.2-2.5-13.2s-3.9,16.2-3.9,16.2
+        s-6.5-0.5-7.2-1.2s-1.4-41.9-1.4-41.9s-2.2-12.2,2.2-18c4.3-5.8,3.6-10.8,3.6-10.8H196.2z"></path>
+    <path class="st2" d="M81.6,496.2l5,42.4c0,0,25.2,30.9,9.3,28.8s-25.9,0.5-25.9-2.4s-0.4-13.2-2.5-13.2S63.6,568,63.6,568
+        s-6.5-0.5-7.2-1.2S55,524.9,55,524.9s-2.2-12.2,2.2-18c4.3-5.8,3.6-10.8,3.6-10.8H81.6z"></path>
+    <path class="st2" d="M158.8,244.2c0,0,23,70.1,24.5,85.6s-1.4,67.8-1.4,67.8s20.9,90.6,16.5,91.3c-4.3,0.8-28.3,4.4-29.1,0.6
+        c-0.7-3.9-3.3-9.8-2.6-12.1c0.7-2.3-2.2-10.8-2.2-15.4c0-4.6-10.1-28.9-9.4-32.8s-12.2-60.9-14.4-65.5c-2.2-4.6-7.9-37-7.9-37
+        s-32.4,94.8-33.1,97.1c-0.7,2.3-3.6,6.2-2.2,6.9s-2.2,6.2-2.2,6.2s-7.5,32-7.5,33.5c0,1.5,1.4,19-1.4,19.8
+        c-2.9,0.8-32.3,0.7-33.7-4.7s15.3-67.9,15.3-67.9s12.2-39.3,8.6-49.3s3.6-70.1,6.5-74.8s3.6-32.4,3.6-32.4L158.8,244.2z"></path>
+    <ellipse class="st0" cx="111" cy="103.5" rx="23" ry="26.5"></ellipse>
+    <path class="st1" d="M123.5,129.4c0,0-25.9,0.8-27.3-1.7c-1.4-2.5-37.4,5.8-37.4,22.6s20.9,81.9,20.9,81.9s7.9,46.8,5.8,51.8
+        s79.8-10.9,77.7-19.2s3-18.4,1.4-42.6c-1.3-20.6-1.4-46.8-1.4-46.8l-10.5-39.5c0,0-3.1-7.3-7.4-3.9S123.5,129.4,123.5,129.4z"></path>
+    <path class="st0" d="M100.5,306.1c0,0,18.7,27.3,5,25.9s-20.1-20.1-20.1-20.1L100.5,306.1z"></path>
+    <path class="st1" d="M63.9,143.5l-5,3.6c0,0-6,54,4.1,83c9.4,27.3,13.9,53.6,13.9,53.6s2.9-2.2,4.3,12.2s-0.7,20.1,3.6,20.1
+        s23.7-4.3,22.3-7.9s-10.8-24.5-11.5-29.5s-4.3-16.5-5.8-23s6.5-10.1,2.9-23.7S84,193.9,84,188.8S63.9,143.5,63.9,143.5z"></path>
+    <rect y="567.4" class="st6" width="702.9" height="2.2"></rect>
+    <g>
+        <path class="st7" d="M81.6,167.1c-0.1,3.9-0.1,7.7-0.1,11.6c0,3.9,0,7.7,0,11.6c0.1,7.7,0.2,15.4,0.7,23.1c0.4,7.7,1,15.4,2.2,23
+            c0.6,3.8,1.3,7.6,2.5,11.2c0.6,1.8,1.2,3.6,2.1,5.3c0.9,1.7,2,3.3,3.7,4.4c-1.7-1-2.9-2.6-3.9-4.2c-1-1.7-1.7-3.5-2.4-5.3
+            c-1.2-3.7-2.1-7.5-2.8-11.3c-1.3-7.6-2-15.3-2.4-23.1c-0.4-7.7-0.5-15.4-0.5-23.2C80.8,182.5,81.1,174.8,81.6,167.1z"></path>
+    </g>
+    <path class="st2" d="M78.5,106.2"></path>
+    <path class="st2" d="M111,75.8c0,0-27.3,6.5-18.7,35.1c0,0-15.9-4.9,5.2-36.7c0,0,30.2-10.5,36.6,15.9c0,0,3,23.4-9.4,28.7
+        C124.7,118.8,146.5,79.3,111,75.8z"></path>
+    <path class="st2" d="M88.6,78.6l-14.8,48c0,0,9.7,11.9,11.7,23.7c0,0-5.1,15.1-1.5,20.5c0,0,3,0.5,6.5-18.4c0,0-2.6-21.3-16.4-24.5
+        c0,0-16.4,14.2-16.4,17.9s-1.9,17.4,2.7,20.7c0,0,17.8,14.6,17.8,39.3c0,0,21.4,29.1,29.1,32.9c0,0,16.8-18.3,22.4-30.7
+        c0,0,13.8-8.1,15.8-24.8s15.1-22.5,15.1-22.5L149.3,119c0,0-9.7,16.7-15.3-25.8c0,0-5.7,31.3-25.1,35.6
+        C108.9,128.7,88.6,129.2,88.6,78.6z"></path>
+    <path class="st2" d="M148.5,131.1c0,0,1.2,6.7-25.3,25.3s-28.5,19.8-28.5,19.8"></path>
+    <path class="st2" d="M154,143.8"></path>
+    </svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <b><hr>
+    </b>
+
+    <svg version="1.1" id="b8c64dc2-e86a-49bc-92bf-164106d9e7fb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 887.9 569.7" style="enable-background:new 0 0 887.9 569.7;" xml:space="preserve">
+        <style type="text/css">
+            .st0{fill:#FFB9B9;}
+            .st1{fill:#4A86E8;}
+            .st2{fill:#2F2E41;}
+            .st3{fill:#E6E6E6;}
+            .st4{fill:#FFFFFF;}
+            .st5{fill:#CCCCCC;}
+            .st6{fill:#3F3D56;}
+            .st7{fill:#0E3772;}
+        </style>
+        <path class="st0" d="M185,268.8c0,0,3.3,19.5-8.1,27.3c-11.3,7.8-8-25.1-8-25.1L185,268.8z"></path>
+        <path class="st1" d="M127.5,160c2.4,4.4,9.7,28.3,13,42c3.4,13.7,12,13.1,13.9,19.5c1.8,6.4,4.2,18.2,5.9,23
+            c1.8,4.8,3.5,27.6,4,31.4s19.6-1.6,23.4-3.7c3.8-2.1-0.9-6.1-6.5-19.4s-2.1-12.8-2.1-12.8s-8.6-25.2-13.4-53.7
+            c-5.1-30.3-36.1-74.9-36.1-74.9l-6.1-0.8C123.5,110.6,125.1,155.6,127.5,160z"></path>
+        <path class="st2" d="M99.8,179c0,0-53.7-74.7-19.1-107.2s51.1-6.8,60.6,10c9.5,16.8,14.7,64.6-4.1,83.4S99.8,179,99.8,179z"></path>
+        <rect x="276.4" y="0.3" class="st3" width="611.5" height="391.6"></rect>
+        <rect x="293.9" y="49.5" class="st4" width="576.5" height="319.3"></rect>
+        <rect x="276.2" class="st1" width="611.5" height="26"></rect>
+        <circle class="st4" cx="295.5" cy="13.3" r="4.8"></circle>
+        <circle class="st4" cx="313.7" cy="13.3" r="4.8"></circle>
+        <circle class="st4" cx="332" cy="13.3" r="4.8"></circle>
+        <path class="st5" d="M707.3,79.4H519.6c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h187.7c0.9,0.1,1.6,1,1.4,1.9
+            C708.6,78.7,708,79.3,707.3,79.4z"></path>
+        <path class="st5" d="M577.2,97.5H457.9c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+            C578.6,96.9,578,97.4,577.2,97.5z"></path>
+        <path class="st5" d="M707.3,97.9H587.9c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+            C708.6,97.2,708,97.8,707.3,97.9z"></path>
+        <path class="st5" d="M577.5,115.7H458.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+            C578.8,115,578.3,115.6,577.5,115.7z"></path>
+        <path class="st5" d="M577.8,133.9H458.5c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+            C579.1,133.2,578.5,133.8,577.8,133.9z"></path>
+        <path class="st5" d="M632,115.7h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4H632c0.9,0.1,1.6,1,1.4,1.9
+            C633.3,115,632.7,115.6,632,115.7L632,115.7z"></path>
+        <path class="st5" d="M632,133.5h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4H632c0.9,0.1,1.6,1,1.4,1.9
+            C633.3,132.9,632.7,133.4,632,133.5L632,133.5z"></path>
+        <path class="st5" d="M689.3,133.5h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+            C690.6,132.9,690.1,133.4,689.3,133.5z"></path>
+        <path class="st5" d="M491.2,79.4H457c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+            C492.5,78.7,491.9,79.3,491.2,79.4z"></path>
+        <path class="st5" d="M576.8,287.7H457.5c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+            C578.1,287,577.5,287.6,576.8,287.7L576.8,287.7z"></path>
+        <path class="st5" d="M576.2,324H456.9c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+            C577.5,323.3,577,323.9,576.2,324z"></path>
+        <path class="st5" d="M576.5,342.2H457.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h119.3c0.9,0.1,1.6,1,1.4,1.9
+            C577.8,341.5,577.2,342.1,576.5,342.2L576.5,342.2z"></path>
+        <path class="st5" d="M627.5,324.3h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+            C628.8,323.7,628.2,324.2,627.5,324.3L627.5,324.3z"></path>
+        <path class="st5" d="M627.5,342.2h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+            C628.8,341.5,628.2,342.1,627.5,342.2L627.5,342.2z"></path>
+        <path class="st5" d="M684.8,324.3h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+            C686.2,323.7,685.6,324.2,684.8,324.3z"></path>
+        <path class="st5" d="M707.4,305.8H519.7c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h187.7c0.9,0.1,1.6,1,1.4,1.9
+            C708.7,305.2,708.2,305.7,707.4,305.8z"></path>
+        <path class="st5" d="M491.3,305.8h-34.2c-0.9-0.1-1.6-1-1.4-1.9c0.1-0.7,0.7-1.3,1.4-1.4h34.2c0.9,0.1,1.6,1,1.4,1.9
+            C492.7,305.2,492.1,305.7,491.3,305.8z"></path>
+        <polygon class="st3" points="548,163.2 501.6,209 548,254.7 558.4,244.3 523.3,209.3 558.7,173.9 "></polygon>
+        <polygon class="st3" points="616.3,163.2 662.7,209 616.3,254.7 605.9,244.3 640.9,209.3 605.6,173.9 "></polygon>
+        <polygon class="st1" points="548,163.2 501.6,209 548,254.7 558.4,244.3 523.3,209.3 558.7,173.9 "></polygon>
+        <polygon class="st1" points="616.3,163.2 662.7,209 616.3,254.7 605.9,244.3 640.9,209.3 605.6,173.9 "></polygon>
+        <path class="st3" d="M470.6,546c14.4,19.3,44.4,21.3,44.4,21.3s6.6-29.3-7.9-48.6s-44.4-21.3-44.4-21.3S456.2,526.7,470.6,546z"></path>
+        <path class="st3" d="M544.1,553.3c-9.5,12.7-29.3,14.1-29.3,14.1s-4.3-19.3,5.2-32.1s29.3-14.1,29.3-14.1S553.6,540.6,544.1,553.3z"></path>
+        <polygon class="st0" points="193.7,459.8 193.7,509.9 179.4,509.9 169.9,457.4 "></polygon>
+        <polygon class="st0" points="80.4,459.8 80.4,509.9 66,509.9 56.5,457.4 "></polygon>
+        <path class="st0" d="M123.5,111.2c0,0-2.9,21.6,10.8,23s-44.6,5.8-44.6,5.8s15.1-13.7,7.2-24.5S123.5,111.2,123.5,111.2z"></path>
+        <path class="st2" d="M196.2,496.6l5,42.4c0,0,25.2,30.9,9.3,28.8s-25.9,0.5-25.9-2.4s-0.4-13.2-2.5-13.2s-3.9,16.2-3.9,16.2
+            s-6.5-0.5-7.2-1.2s-1.4-41.9-1.4-41.9s-2.2-12.2,2.2-18c4.3-5.8,3.6-10.8,3.6-10.8H196.2z"></path>
+        <path class="st2" d="M81.6,496.2l5,42.4c0,0,25.2,30.9,9.3,28.8s-25.9,0.5-25.9-2.4s-0.4-13.2-2.5-13.2S63.6,568,63.6,568
+            s-6.5-0.5-7.2-1.2S55,524.9,55,524.9s-2.2-12.2,2.2-18c4.3-5.8,3.6-10.8,3.6-10.8H81.6z"></path>
+        <path class="st2" d="M158.8,244.2c0,0,23,70.1,24.5,85.6s-1.4,67.8-1.4,67.8s20.9,90.6,16.5,91.3c-4.3,0.8-28.3,4.4-29.1,0.6
+            c-0.7-3.9-3.3-9.8-2.6-12.1c0.7-2.3-2.2-10.8-2.2-15.4c0-4.6-10.1-28.9-9.4-32.8s-12.2-60.9-14.4-65.5c-2.2-4.6-7.9-37-7.9-37
+            s-32.4,94.8-33.1,97.1c-0.7,2.3-3.6,6.2-2.2,6.9s-2.2,6.2-2.2,6.2s-7.5,32-7.5,33.5c0,1.5,1.4,19-1.4,19.8
+            c-2.9,0.8-32.3,0.7-33.7-4.7s15.3-67.9,15.3-67.9s12.2-39.3,8.6-49.3s3.6-70.1,6.5-74.8s3.6-32.4,3.6-32.4L158.8,244.2z"></path>
+        <ellipse class="st0" cx="111" cy="103.5" rx="23" ry="26.5"></ellipse>
+        <path class="st1" d="M123.5,129.4c0,0-25.9,0.8-27.3-1.7c-1.4-2.5-37.4,5.8-37.4,22.6s20.9,81.9,20.9,81.9s7.9,46.8,5.8,51.8
+            s79.8-10.9,77.7-19.2s3-18.4,1.4-42.6c-1.3-20.6-1.4-46.8-1.4-46.8l-10.5-39.5c0,0-3.1-7.3-7.4-3.9S123.5,129.4,123.5,129.4z"></path>
+        <path class="st0" d="M100.5,306.1c0,0,18.7,27.3,5,25.9s-20.1-20.1-20.1-20.1L100.5,306.1z"></path>
+        <path class="st1" d="M63.9,143.5l-5,3.6c0,0-6,54,4.1,83c9.4,27.3,13.9,53.6,13.9,53.6s2.9-2.2,4.3,12.2s-0.7,20.1,3.6,20.1
+            s23.7-4.3,22.3-7.9s-10.8-24.5-11.5-29.5s-4.3-16.5-5.8-23s6.5-10.1,2.9-23.7S84,193.9,84,188.8S63.9,143.5,63.9,143.5z"></path>
+        <rect y="567.4" class="st6" width="702.9" height="2.2"></rect>
+        <g>
+            <path class="st7" d="M81.6,167.1c-0.1,3.9-0.1,7.7-0.1,11.6c0,3.9,0,7.7,0,11.6c0.1,7.7,0.2,15.4,0.7,23.1c0.4,7.7,1,15.4,2.2,23
+                c0.6,3.8,1.3,7.6,2.5,11.2c0.6,1.8,1.2,3.6,2.1,5.3c0.9,1.7,2,3.3,3.7,4.4c-1.7-1-2.9-2.6-3.9-4.2c-1-1.7-1.7-3.5-2.4-5.3
+                c-1.2-3.7-2.1-7.5-2.8-11.3c-1.3-7.6-2-15.3-2.4-23.1c-0.4-7.7-0.5-15.4-0.5-23.2C80.8,182.5,81.1,174.8,81.6,167.1z"></path>
+        </g>
+        <path class="st2" d="M78.5,106.2"></path>
+        <path class="st2" d="M111,75.8c0,0-27.3,6.5-18.7,35.1c0,0-15.9-4.9,5.2-36.7c0,0,30.2-10.5,36.6,15.9c0,0,3,23.4-9.4,28.7
+            C124.7,118.8,146.5,79.3,111,75.8z"></path>
+        <path class="st2" d="M88.6,78.6l-14.8,48c0,0,9.7,11.9,11.7,23.7c0,0-5.1,15.1-1.5,20.5c0,0,3,0.5,6.5-18.4c0,0-2.6-21.3-16.4-24.5
+            c0,0-16.4,14.2-16.4,17.9s-1.9,17.4,2.7,20.7c0,0,17.8,14.6,17.8,39.3c0,0,21.4,29.1,29.1,32.9c0,0,16.8-18.3,22.4-30.7
+            c0,0,13.8-8.1,15.8-24.8s15.1-22.5,15.1-22.5L149.3,119c0,0-9.7,16.7-15.3-25.8c0,0-5.7,31.3-25.1,35.6
+            C108.9,128.7,88.6,129.2,88.6,78.6z"></path>
+        <path class="st2" d="M148.5,131.1c0,0,1.2,6.7-25.3,25.3s-28.5,19.8-28.5,19.8"></path>
+        <path class="st2" d="M154,143.8"></path>
+        </svg>
+
+
+
+        <br>
+        <hr>
+
+        <!-- As a link -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+    </div>
+  </nav>
+  
+  <!-- As a heading -->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Navbar</span>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <hr>
+
+
+    <!-- <a href="https://www.facebook.com/startupistan" target="_blank" class="sqs-svg-icon--wrapper facebook-unauth" aria-label="Facebook">
+                      <div>
+                        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                          <use class="sqs-use--icon" xlink:href="#facebook-unauth-icon"></use>
+                          <use class="sqs-use--mask" xlink:href="#facebook-unauth-mask"></use>
+                        </svg>
+                      </div>
+                    </a><a href="https://www.instagram.com/startupistan1" target="_blank" class="sqs-svg-icon--wrapper instagram-unauth" aria-label="Instagram">
+                      <div>
+                        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                          <use class="sqs-use--icon" xlink:href="#instagram-unauth-icon"></use>
+                          <use class="sqs-use--mask" xlink:href="#instagram-unauth-mask"></use>
+                        </svg>
+                      </div>
+                    </a><a href="mailto:HELLO@STARTUPISTAN.ORG" target="_blank" class="sqs-svg-icon--wrapper email" aria-label="HELLO@STARTUPISTAN.ORG">
+                      <div>
+                        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                          <use class="sqs-use--icon" xlink:href="#email-icon"></use>
+                          <use class="sqs-use--mask" xlink:href="#email-mask"></use>
+                        </svg>
+                      </div>
+                    </a><a href="https://medium.com/@startupistan1" target="_blank" class="sqs-svg-icon--wrapper medium" aria-label="Medium">
+                      <div>
+                        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                          <use class="sqs-use--icon" xlink:href="#medium-icon"></use>
+                          <use class="sqs-use--mask" xlink:href="#medium-mask"></use>
+                        </svg>
+                      </div>
+                    </a><a href="https://af.linkedin.com/company/startupistan" target="_blank" class="sqs-svg-icon--wrapper linkedin-unauth" aria-label="LinkedIn">
+                      <div>
+                        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                          <use class="sqs-use--icon" xlink:href="#linkedin-unauth-icon"></use>
+                          <use class="sqs-use--mask" xlink:href="#linkedin-unauth-mask"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </nav> -->
+
+
+
+
+
+
+
+                  
+
+
+
+
+
+
+                    
+
+
+                         <p>We are social entrepreneurs, scattered across Europe and Afghanistan <br> 
+                            - united by our mission to promote empowerment through digital education for youth around the world.</p>
